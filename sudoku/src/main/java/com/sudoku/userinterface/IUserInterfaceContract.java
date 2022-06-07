@@ -1,5 +1,7 @@
 package com.sudoku.userinterface;
 
+import com.sudoku.problemdomain.SudokuGame;
+
 public interface IUserInterfaceContract {
   interface EventListener {
     void onSudokluInput(int x, int y, int input);

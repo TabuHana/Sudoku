@@ -44,7 +44,7 @@ public class UserInterfaceImpl implements IUserInterfaceContract.View, EventHand
   private static final String SUDOKU = "Sudoku";
 
 
-  public UserInterfaceImpl(Stage stage {
+  public UserInterfaceImpl(Stage stage) {
     this.stage = stage;
     this.root = new Group();
     this.textFieldCoordinates = new HashMap<>();
@@ -197,7 +197,7 @@ public class UserInterfaceImpl implements IUserInterfaceContract.View, EventHand
   public void handle(KeyEvent event) {
     if (event.getEventType() == KeyEvent.KEY_PRESSED) {
       if(event.getText().matches("[0-9]")) {
-        int value = Interger.parseInt(event.getText());
+        int value = Integer.parseInt(event.getText());
         handleInput(value, event.getSource());
       } else if (event.getCode() == KeyCode.BACK_SPACE) {
         handleInput(0, event.getSource());
