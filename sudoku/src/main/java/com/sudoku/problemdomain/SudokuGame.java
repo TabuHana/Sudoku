@@ -3,6 +3,7 @@ package com.sudoku.problemdomain;
 import java.io.Serializable;
 
 import com.sudoku.constants.GameState;
+import com.sudoku.computationlogic.SudokuUtilities;
 
 public class SudokuGame implements Serializable{
   private final GameState gameState;
