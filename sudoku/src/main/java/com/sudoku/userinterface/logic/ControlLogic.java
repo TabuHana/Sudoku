@@ -2,6 +2,7 @@ package com.sudoku.userinterface.logic;
 
 import java.io.IOException;
 
+import com.sudoku.computationlogic.GameLogic;
 import com.sudoku.constants.GameState;
 import com.sudoku.constants.Messages;
 import com.sudoku.problemdomain.IStorage;
